@@ -16,7 +16,7 @@ apt-get -y upgrade > /dev/null
 
 
 echo Instalacja kompilatorów
-inst clang++ g++-multilib
+inst clang g++-multilib
 
 
 echo Instalacja konsolowych edytorów tekstu
