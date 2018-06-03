@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=clang++ with debug flags
+Terminal=true
+Name=clang++ debug
+Exec=bash --init-file ~/.local/share/applications/clang_extended.sh
+Type=Application
+Icon=utilities-terminal

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=g++ normal compilation
+Terminal=true
+Name=g++
+Exec=bash --init-file ~/.local/share/applications/gcc.sh
+Type=Application
+Icon=utilities-terminal

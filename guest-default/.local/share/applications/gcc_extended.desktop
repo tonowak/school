@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=g++ compilation like in checkers
+Terminal=true
+Name=g++ sprawdzarka
+Exec=bash --init-file ~/.local/share/applications/gcc_extended.sh
+Type=Application
+Icon=utilities-terminal

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=Kate
+Terminal=false
+Name=Kate
+Exec=kate
+Type=Application
+Icon=accessories-text-editor

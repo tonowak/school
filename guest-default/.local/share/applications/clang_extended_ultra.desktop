@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=clang++ with ultra debug flags
+Terminal=true
+Name=clang++ debug lepszy
+Exec=bash --init-file ~/.local/share/applications/clang_extended_ultra.sh
+Type=Application
+Icon=utilities-terminal

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=clang++ normal compilation
+Terminal=true
+Name=clang++
+Exec=bash --init-file ~/.local/share/applications/clang.sh
+Type=Application
+Icon=utilities-terminal

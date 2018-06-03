@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=gdb
+Terminal=true
+Name=gdb
+Exec=gdb --version
+Type=Application
+Icon=utilities-terminal

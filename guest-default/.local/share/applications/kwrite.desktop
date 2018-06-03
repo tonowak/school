@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=KWrite
+Terminal=false
+Name=KWrite
+Exec=kwrite
+Type=Application
+Icon=accessories-text-editor

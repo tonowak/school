@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=valgrind
+Terminal=true
+Name=valgrind
+Exec=valgrind
+Type=Application
+Icon=utilities-terminal

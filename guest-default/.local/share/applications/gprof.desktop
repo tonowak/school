@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=gprof
+Terminal=true
+Name=gprof
+Exec=gprof --help; exec bash
+Type=Application
+Icon=utilities-terminal
