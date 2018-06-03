@@ -1,10 +1,10 @@
 #!/bin/bash
-version=2
+version=0
 
 echo "STARTING SCRIPT $(date)" >>/opt/school_log 2>&1
-# cd /opt/
-# rm -rf school
-# git clone https://github.com/tonowak/school
+cd /opt/
+rm -rf school >>/opt/school_log 2>&1
+git clone https://github.com/tonowak/school >>/opt/school_log 2>&1
 cd /opt/school/
 chmod -R 771 updates
 echo
