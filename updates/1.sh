@@ -1,52 +1,24 @@
-#!/bin/bash
-echo Description: Instalowanie edytorów tekstu, rzeczy do kodzenia
+#!/bin/sh
 
 inst() {
 	for i in "$@"
 	do
-		echo $i
-		apt-get -y install $i > /dev/null
+		apt-get -y install $i >>/opt/school_log 2>&1
 	done
 }
 
+apt-get -y update
+apt-get -y upgrade
 
-echo Aktualizacja systemu
-apt-get -y update > /dev/null
-apt-get -y upgrade > /dev/null
-
-
-echo Instalacja kompilatorów
 inst clang g++-multilib
+inst vim kate kwrite gedit emacs scite vim-gnome codeblocks geany
 
-
-echo Instalacja konsolowych edytorów tekstu
-inst vim mc
-
-
-echo Instalacja graficznych edytorów tekstu
-inst kate kwrite gedit emacs scite
-
-echo gvim
-apt-get -y install vim-gnome > /dev/null
-
-echo sublime-text 3
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-apt-get -y install apt-transport-https > /dev/null
+apt-get -y install apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" | tee /etc/apt/sources.list.d/sublime-text.list
-apt-get -y update > /dev/null
-apt-get -y install sublime-text > /dev/null
+apt-get -y update
+inst sublime-text
 
+inst valgrind kcachegrind gdb
 
-echo Instalacja środowisk programistycznych
-inst codeblocks geany
-
-
-echo Instalacja narzędzi do debuggowania
-inst valgrind
-apt-get -y install kachegrind > /dev/null
-echo gprof
-echo gdb
-
-
-echo Instalacja reszty
-inst ipython
+inst git ipython arduino chromium-browser
