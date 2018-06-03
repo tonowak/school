@@ -2,7 +2,7 @@
 
 mkdir /home/guest-default
 useradd -d /home/guest-default -s /bin/bash guest-default
-chown guest-default /home/guest-default
+chown guest-default /home/guest-default -R
 chmod 0750 /home/guest_default
 
 # hide user
