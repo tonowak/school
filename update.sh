@@ -28,5 +28,6 @@ then
 	rm -r /home/guest-default/
 	mkdir /home/guest-default/
 	cp -r /opt/school/guest-default/ /home/
+	chown guest-default /home/guest-default -R
 fi
 
