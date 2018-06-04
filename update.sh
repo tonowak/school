@@ -2,6 +2,16 @@
 version=0
 
 echo "STARTING SCRIPT $(date)" >>/opt/school_log 2>&1
+
+echo "WAITING FOR NETWORK"
+while ! ping -c 5 google.com > /dev/null
+do
+	echo "No internet connection, waiting 5 seconds"
+done
+
+echo "Found internet connection!"
+echo "CLONING FROM GIT"
+
 cd /opt/
 rm -rf school >>/opt/school_log 2>&1
 git clone https://github.com/tonowak/school >>/opt/school_log 2>&1
