@@ -1,3 +1,16 @@
+### BEGIN INIT INFO
+# Provides:          school_update
+# Required-Start:    networking
+# Required-Stop:     
+# Default-Start:     4
+# Default-Stop:      
+# Short-Description: school update script
+# Description:       Script used to update
+#                    school's Linux Mints
+#                    by Tomasz Nowak
+#                    13 LO Szczecin
+### END INIT INFO
+
 #!/bin/bash
 version=0
 
