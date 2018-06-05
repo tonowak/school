@@ -7,6 +7,7 @@ echo "WAITING FOR NETWORK" >>/opt/school_log 2>&1
 while ! ping -c 5 google.com > /dev/null
 do
 	echo "No internet connection, waiting 5 seconds" >>/opt/school_log 2>&1
+	sleep 5
 done
 
 echo "Found internet connection!" >>/opt/school_log 2>&1
@@ -19,6 +20,7 @@ cd /opt/school/ >>/opt/school_log 2>&1
 chmod -R 771 updates >>/opt/school_log 2>&1
 echo >>/opt/school_log 2>&1
 
+sed -i "2s/.*/version=$i/" update.sh >>/opt/school_log 2>&1
 for ((i=version + 1; ; ++i))
 do
 	if [ -e updates/$i.sh ]
@@ -41,3 +43,4 @@ then
 	chown guest-default /home/guest-default -R >>/opt/school_log 2>&1
 fi
 
+echo "ENDED UPDATE AT $(date)" >>/opt/school_log 2>&1
