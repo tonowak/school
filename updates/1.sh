@@ -21,4 +21,4 @@ inst sublime-text
 
 inst valgrind kcachegrind gdb
 
-inst git ipython arduino chromium-browser
+inst git ipython arduino
