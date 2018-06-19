@@ -37,7 +37,7 @@ start() {
 	update-rc.d update.sh defaults
 	echo >>$LOG 2>&1
 
-	sed -i "2s/.*/version=$i/" update.sh >>$LOG 2>&1
+	sed -i "2s/.*/version=$version/" update.sh >>$LOG 2>&1
 	for ((i=version + 1; ; ++i))
 	do
 		if [ -e updates/$i.sh ]
