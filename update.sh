@@ -58,6 +58,7 @@ start() {
 		mkdir /home/guest-default/ >>$LOG 2>&1
 		cp -r /opt/school/guest-default/ /home/ >>$LOG 2>&1
 		chown guest-default /home/guest-default -R >>$LOG 2>&1
+		chmod +x -R /home/guest-default
 	fi
 
 	echo "ENDED UPDATE AT $(date)" >>$LOG 2>&1
