@@ -1,5 +1,6 @@
 # installing zsh
 
+sudo apt-get update
 sudo apt-get install zsh -y
 mkdir /home/guest-default/.oh-my-zsh/
 export ZSH="/home/guest-default/.oh-my-zsh"
