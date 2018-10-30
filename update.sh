@@ -33,6 +33,9 @@ start() {
 	rm -rf school >>$LOG 2>&1
 	git clone https://github.com/tonowak/school >>$LOG 2>&1
 	cd /opt/school/ >>$LOG 2>&1
+	git submodule init >>$LOG 2>&1
+	git submodule update >>$LOG 2>&1
+	
 	chmod -R 771 updates >>$LOG 2>&1
 	update-rc.d update.sh defaults
 	echo >>$LOG 2>&1
