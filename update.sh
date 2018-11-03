@@ -66,6 +66,8 @@ start() {
 		chown guest-default /home/guest-default -R >>$LOG 2>&1
 		chmod +x -R /home/guest-default
 	fi
+	
+	sudo sysctl kernel.perf_event_paranoid=-1
 
 	echo "ENDED UPDATE AT $(date)" >>$LOG 2>&1
 }
