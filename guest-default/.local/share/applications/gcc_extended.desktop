@@ -1,7 +1,7 @@
 [Desktop Entry]
 Comment=g++ compilation like in checkers
 Terminal=true
-Name=g++ sprawdzarka
-Exec=bash --init-file ~/.local/share/applications/gcc_extended.sh
+Name=g++ kompilacja OIa
+Exec=gnome-terminal -x zsh -c "echo 'g++ -std=c++11 -O3 -static -m32 plik.cpp -o plik'; zsh -i"
 Type=Application
 Icon=utilities-terminal

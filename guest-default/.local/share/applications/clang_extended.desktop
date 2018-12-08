@@ -2,6 +2,7 @@
 Comment=clang++ with debug flags
 Terminal=true
 Name=clang++ debug
+Exec=gnome-terminal -x zsh -c "echo 'clang++ -std=c++11 -Wall -Wextra -Wshadow -D_GLIBCXX_DEBUG -ggdb -fsanitize=address,undefined plik.cpp -o plik'; zsh -i"
 Exec=bash --init-file ~/.local/share/applications/clang_extended.sh
 Type=Application
 Icon=utilities-terminal

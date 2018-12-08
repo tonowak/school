@@ -2,6 +2,6 @@
 Comment=g++ normal compilation
 Terminal=true
 Name=g++
-Exec=bash --init-file ~/.local/share/applications/gcc.sh
+Exec=gnome-terminal -x zsh -c "echo 'g++ -std=c++11 plik.cpp -o plik'; zsh -i"
 Type=Application
 Icon=utilities-terminal

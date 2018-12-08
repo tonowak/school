@@ -2,6 +2,6 @@
 Comment=clang++ normal compilation
 Terminal=true
 Name=clang++
-Exec=bash --init-file ~/.local/share/applications/clang.sh
+Exec=gnome-terminal -x zsh -c "echo 'clang++ -std=c++11 plik.cpp -o plik'; zsh -i"
 Type=Application
 Icon=utilities-terminal

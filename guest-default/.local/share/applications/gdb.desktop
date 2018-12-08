@@ -2,6 +2,6 @@
 Comment=gdb
 Terminal=true
 Name=gdb
-Exec=gdb --version
+Exec=gnome-terminal -x zsh -c "echo 'gdb -q plik\nPotem komendy:\nrun < test\nbt\nq\ny'; zsh -i"
 Type=Application
 Icon=utilities-terminal

@@ -2,6 +2,6 @@
 Comment=valgrind
 Terminal=true
 Name=valgrind
-Exec=valgrind
+Exec=gnome-terminal -x zsh -c "echo 'valgrind --tool=cachegrind plik\nkcachegrind nowy_plik'; zsh -i"
 Type=Application
 Icon=utilities-terminal
