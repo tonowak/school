@@ -40,9 +40,6 @@ start() {
 	update-rc.d update.sh defaults
 	echo >>$LOG 2>&1
 	
-	apt-get update
-	apt-get upgrade
-
 	sed -i "2s/.*/version=$version/" update.sh >>$LOG 2>&1
 	for ((i=version + 1; ; ++i))
 	do
@@ -68,6 +65,9 @@ start() {
 	fi
 	
 	sudo sysctl kernel.perf_event_paranoid=-1
+
+	apt-get update
+	apt-get upgrade
 
 	echo "ENDED UPDATE AT $(date)" >>$LOG 2>&1
 }
