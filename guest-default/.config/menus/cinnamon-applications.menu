@@ -10,6 +10,9 @@
 		<Include>
 			<Filename>chromium.desktop</Filename>
 		</Include>
+		<Include>
+			<Filename>documentation.desktop</Filename>
+		</Include>
 		<Exclude>
 			<Filename>pidgin.desktop</Filename>
 		</Exclude>
