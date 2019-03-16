@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=en.cppreference.com
+Terminal=false
+Name=Dokumentacja C++/STD
+Exec=chromium-browser cppreference.com
+Type=Application
+Icon=chromium-browser
