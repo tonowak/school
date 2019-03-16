@@ -3,6 +3,6 @@ Comment=clang++ with ultra debug flags
 Terminal=true
 Name=clang++ debug lepszy
 # Exec=gnome-terminal -x ~/.local/share/applications/clang_extended_ultra.sh
-Exec=gnome-terminal -x zsh -c "echo 'clang++ -std=c++11 -Wall -Wextra -Wshadow -Wconversion -Wno-sign-conversion -Wfloat-equal -D_GLIBCXX_DEBUG -ggdb -fsanitize=address,undefined -fno-omit-frame-pointer -fno-optimize-sibling-calls -DDEBUG plik.cpp -o plik'; zsh -i"
+Exec=gnome-terminal -x zsh -c "echo 'clang++ -std=c++11 -Wall -Wextra -Wshadow -Wconversion -Wno-sign-conversion -Wfloat-equal -D_GLIBCXX_DEBUG -ggdb -fsanitize=address,undefined -DDEBUG plik.cpp -o plik'; zsh -i"
 Type=Application
 Icon=utilities-terminal
