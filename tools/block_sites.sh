@@ -2,7 +2,7 @@
 #  iptables additions that allows HTTP/HTTPS whitelists, then blocks everything else...but only for HTTP/HTTPS connections on their standard ports
 #
 
-zsh unblock_sites.sh
+zsh /opt/school/tools/unblock_sites.sh
 hostlist="olimpiada.programuj.edu.pl cppreference.com"
 
 # Create some new chains for these rules

@@ -6,4 +6,4 @@ if [ -z $username ]; then
 	exit 0
 fi
 
-userdel -r "$username"
+deluser --remove-home "$username"
