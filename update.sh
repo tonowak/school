@@ -38,6 +38,7 @@ start() {
 	
 	chmod -R 771 updates >>$LOG 2>&1
 	update-rc.d update.sh defaults
+
 	echo >>$LOG 2>&1
 	
 	sed -i "2s/.*/version=$version/" update.sh >>$LOG 2>&1
