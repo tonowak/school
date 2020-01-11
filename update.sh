@@ -29,7 +29,7 @@ start() {
 	echo "CLONING FROM GIT" >>$LOG 2>&1
 
 	cd /opt/school
-	# git pull >>LOG 2>&1
+	git pull >>LOG 2>&1
 	git submodule update >>$LOG 2>&1
 	
 	chmod -R 771 run_once >>$LOG 2>&1
