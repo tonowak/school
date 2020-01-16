@@ -30,7 +30,7 @@ start() {
 
 	cd /opt/school
 	git pull >>LOG 2>&1
-	git submodule update >>$LOG 2>&1
+	git submodule update --init --recursive >>$LOG 2>&1
 	
 	chmod -R 771 run_once >>$LOG 2>&1
 	chmod -R 771 run_always >>$LOG 2>&1
